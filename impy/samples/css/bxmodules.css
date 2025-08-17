@@ -1,0 +1,103 @@
+#page_body {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-rows: auto; 
+}
+
+.page_content {
+	gap: 10px;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 600px auto;
+}
+
+/* ---------------------------------------- */
+.page_content_menu {
+	overflow-x: hidden;
+	overflow-y: auto;
+    border-radius: 15px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 25px 20px -20px;
+	background-image: 
+		repeating-radial-gradient(circle at 0 100%, rgba(239, 239, 250, 0.692), rgba(216, 221, 220, 0.555) 1px, 
+        rgba(158, 185, 248, 0.349) 2px, rgba(225, 241, 243, 0.623) 3px, rgba(27,27,30, 0.1) 4px), 
+		radial-gradient(circle at 0 100%, #d7dff5e8, #cef8d5, #bdebf3, #aaabac, #f7f8fa);
+}
+
+.rounded {
+    padding: 0;
+    list-style: none; 
+    margin-top: 2.2em;
+    counter-reset: li;    
+    font: 16px "Trebuchet MS", "Lucida Sans";   
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rounded li span {
+    position: relative;
+    display: block;   
+    margin: .8em 1.5em;
+    margin-left: 2.2em;
+    padding: .5em .3em .5em 3em;
+    user-select: none;
+    color: #444;
+    background: #DAD2CA;   
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s ease-out;  
+}
+
+.rounded li span:hover {
+    background: #E9E4E0;
+    cursor: pointer;
+}
+
+.rounded li span:hover:before {
+    transform: rotate(360deg);
+}
+
+.rounded li span:before {
+    top: 50%;
+    left: -1.5em;
+    height: 2.1em;
+    width: 2.1em;
+    font-size: 1em;
+    position: absolute;
+    content: counter(li);
+    counter-increment: li;     
+    text-indent: .1em;
+    padding-right: -12.5em;
+    margin-top: -1.1em;
+    margin-left: .8em;      
+    line-height: 2.1em;  
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    border: .1em solid white;
+    background: #8FD4C1;
+    transition: all .3s ease-out;
+}
+
+.rounded li div {
+    display: none;
+    min-height: 12em; 
+    padding: .1em .9em;
+    margin: -.5em 1.8em;
+    box-sizing: border-box; 
+    background: rgba(0, 0, 0, .1); 
+}
+
+.rounded li p {
+    text-indent: 1.5em;
+    text-align: justify;    
+}
+
+/* ---------------------------------------- */
+.page_content_view {
+    flex-grow: 1;  
+}
+
+.page_content_view h3 {
+    text-align: center;   
+}

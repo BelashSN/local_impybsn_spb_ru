@@ -1,0 +1,30 @@
+.group { 
+    height: 26px;
+    padding: 16px;
+    font-size: 15px; 
+    margin-top: 10px;    
+    display: flex;   
+    flex-wrap: nowrap; 
+    flex-direction: row;
+    background: #eeeeee; 
+}
+
+.css_ajax {
+    margin-right: 20px;
+}
+
+#process {
+    animation: colorTransition 1s infinite alternate;
+}
+
+@keyframes colorTransition {
+    0% {
+        color: #ff0597;
+    }
+    50% {
+        color: #1605ff;
+    }
+    100% {
+        color: #fd032d;
+    }
+}

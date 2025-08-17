@@ -1,0 +1,26 @@
+#page_body {
+    display: grid;
+    grid-template-rows: auto;    
+}
+
+/* --------------------- */
+.news_content {
+    padding: 10px;
+    margin-top: 5px;    
+	overflow-x: hidden;
+	overflow-y: auto;
+
+    border-radius: 15px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 25px 20px -20px;
+	background-image: 
+		repeating-radial-gradient(circle at 0 100%, rgba(239, 239, 250, 0.692), rgba(216, 221, 220, 0.555) 1px, 
+        rgba(158, 185, 248, 0.349) 2px, rgba(225, 241, 243, 0.623) 3px, rgba(27,27,30, 0.1) 4px), 
+		radial-gradient(circle at 0 100%, #d7dff5e8, #cef8d5, #bdebf3, #aaabac, #f7f8fa);
+}
+
+.news_content_header {
+    margin-top: 7px;
+    text-align: center;    
+}

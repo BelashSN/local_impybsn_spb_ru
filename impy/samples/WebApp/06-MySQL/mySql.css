@@ -1,0 +1,227 @@
+/* --- Описание таблицы шапка --- */
+#orders {
+  width: 100%;
+}
+
+#orders th {
+  background: #cfe;
+  user-select: none;
+}
+
+#orders th.th_sort:after { 
+  content: "\2B9D";
+  color: #cfe;
+  float: right;
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+#orders th.asc:after {
+  color: #777;
+  content: "\2B9F";
+}
+
+#orders th.desc:after {
+  color: #777;
+  content: "\2B9D";
+}
+
+/* --- Описание таблицы строки --- */
+#orders td, #orders th {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+#orders strong {
+  color: red;
+}
+
+.orders_rows_odd {
+  background: #eaffff;
+}
+
+.orders_rows_even {
+  background: #fbfbfb;   
+}
+
+/* --- Панель инструментов --- */
+.orders_toolbar {
+  height: 40px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  background: #eee;
+}
+
+.orders_navigator {
+  height: 25px;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.orders_tool_panel {
+  width: 100%;
+  margin-left: 6px;
+}
+
+#orders_search_clear {
+  float: right;
+  margin-right: 6px;
+}
+
+#orders_toolbar_search {
+  float: right;
+  width: 30%;   
+  background-size: 12px;
+  outline: none;
+  border-color: #eee;
+  background-repeat: no-repeat;
+  background-position: right 4px center;  
+  background-image: url("https://www.w3.org/assets/website-2021/svg/search.svg");
+}
+
+#orders_toolbar_search:focus {
+  border-color: #cfe;
+}
+
+#orders_delete:not(:disabled) {
+  color: red;
+}
+
+.nav_buttons, .tool_buttons,
+#orders_navigator_type {
+  border-width: 1px;
+}
+
+#orders_navigator_type:hover, 
+.tool_buttons:hover:not(:disabled), 
+.nav_buttons:hover:not(:disabled) {
+  background: #cfe;
+  cursor: pointer;
+}
+
+/* --- Панель навигации --- */
+#orders_navigator_panel {
+  float: right;
+  order: 3;
+  text-align: center;
+  display: flex;
+}
+
+#orders_navigator_selected {
+  margin-left: 10px;
+  color: red;
+}
+
+.nav_buttons {
+  width: 35px;
+}
+
+#orders_navigator_total {
+  float: left;
+  order: 1;
+  margin-left: 6px; 
+  padding-top: 2px;
+}
+
+#orders_navigator_type {
+  width: 120px;
+  padding-top: 2px;
+}
+
+.orders_navigator_disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* --- Форма нового заказа --- */
+.orders_popup {
+  top: 50%;
+  left: 50%;
+  width: 780px; 
+  position: absolute;
+  background: #ffffff;  
+  transform: translate(-50%, -50%);
+}
+
+.orders_popup_bg {   
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.orders_popup_block {
+    column-count: 2; 
+}
+
+.orders_popup form {
+  padding: 8px;
+  display: flex;
+  padding-top: 15px;
+  background: #eeeeee; 
+  flex-direction: column;
+}
+
+.orders_popup form legend {
+  margin-bottom: 15px;
+}
+
+.orders_popup form input {
+  width:250px; 
+  outline: none;
+  border-width: 0.5px;
+} 
+
+.orders_popup form p { 
+  width: 110px; 
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.orders_popup form .footer { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+/* --- Кнопки формы нового заказа --- */
+.orders_popup .opc_btn:nth-child(n + 1) {
+  margin-left: 5px;
+}
+
+.orders_popup .opc_btn {
+  height: 28px;
+  width: 110px;
+  border-width: 1px;
+}
+.orders_popup .opc_btn:hover {
+  background: #cfe;
+  cursor: pointer;
+}
+
+.orders_popup .orders_popup_close:hover {
+  background: #faa;
+  cursor: pointer;
+}
+
+.orders_popup_header {
+  padding: 5px;
+  height: 22px;
+  background: #dff;
+}
+
+.orders_popup_header span {
+  float: right;
+  order: 1;
+}
+
+/* --- Отображение формы нового заказа --- */
+.orders_popup_show {
+  overflow-y: hidden;
+}
