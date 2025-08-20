@@ -1,4 +1,4 @@
-<?
+<?php
     require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
     use Bitrix\Main\Page\Asset;
     //------------------
@@ -18,7 +18,7 @@
 -->
 
 <!--------------------------------------------------------------------------->
-<? include_once("nt_header.php"); ?>
+<?php include_once("nt_header.php"); ?>
 
 <!--------------------------------------------------------------------------->
 <div  id="page_body" style="height: 60vh;">
@@ -52,4 +52,6 @@
 </div>
 
 <!--------------------------------------------------------------------------->
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?php
+	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
+?>

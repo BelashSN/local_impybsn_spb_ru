@@ -1,0 +1,8 @@
+.rounded {
+    padding: 0;
+    list-style: none; 
+    margin-top: 2.2em;
+    counter-reset: li;    
+    font: 16px "Trebuchet MS", "Lucida Sans";   
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
